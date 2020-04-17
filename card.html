@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="setting.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" async></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="card">
+        <div class="card-image">
+          <!-- <h1>000cafe</h1> -->
+        </div>
+        <div class="card-body">
+          <div class="controls">
+            <a data-action="drawer" href="#">
+              <i class="ion-android-arrow-up up"></i>
+              <i class="ion-android-arrow-down down"></i>
+            </a>
+            <a data-action="share" href="#">
+              <i class="ion-android-share-alt"></i>
+            </a>
+            <a data-action="bookmark" href="#">
+              <i class="ion-android-bookmark"></i>
+            </a>
+            <a data-action="favorite" href="#">
+              <i class="ion-android-favorite"></i>
+            </a>
+          </div>
+          <h1>Get Lost In the Woods</h1>
+          <p>
+            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. 
+          </p>
+        </div>
+      </div>
+      <script>
+        $('body').on('click', '[data-action="drawer"]', function() {
+            $(this).closest('.card').toggleClass("active");
+        });
+      </script>
+</body>
+
+</html>
+
+
